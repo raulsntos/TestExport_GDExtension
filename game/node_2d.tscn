@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://m3b6pirddenn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fs6k8"]
+font_size = 80
+
+[node name="Node2D" type="CustomNode2D" node_paths=PackedStringArray("label")]
+label = NodePath("Label")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "default text"
+label_settings = SubResource("LabelSettings_fs6k8")
